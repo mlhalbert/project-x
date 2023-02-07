@@ -11,13 +11,13 @@ const sequelize = require('../config/connection');
 const { YourCustomModel } = require('../models');
 
 // This is an example, change this. This json file does not exist yet.
-const customData = require('./data.json');
+const data = require('../db/seeds.sql');
 
 // This is an example, change this
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
 
-  await YourCustomModel.bulkCreate(customData, {
+  await YourCustomModel.bulkCreate(data, {
     individualHooks: true,
     returning: true,
   });
