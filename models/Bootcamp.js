@@ -4,10 +4,10 @@ const sequelize = require('../config/connection');
 
 
 // Original model name was "User"
-class ZoomEvent extends Model {
+class Bootcamp extends Model {
 }
 
-ZoomEvent.init(
+Bootcamp.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -28,8 +28,8 @@ ZoomEvent.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'custom',
+    modelName: 'bootcamp',
   }
 );
 
-module.exports = ZoomEvent;
+module.exports = Bootcamp;

@@ -4,6 +4,8 @@ CREATE DATABASE bingo_db;
 USE bingo_db;
 
 CREATE TABLE bootcamp (
-  id INT NOT NULL,
-  occurance TEXT NOT NULL,
+  id INT PRIMARY KEY AUTO_INCREMENT NOT NULL ,
+  description TEXT NOT NULL
 );
+
+SELECT * FROM bootcamp;
