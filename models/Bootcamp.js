@@ -4,10 +4,10 @@ const sequelize = require('../config/connection');
 
 
 // Original model name was "User"
-class YourCustomModel extends Model {
+class Bootcamp extends Model {
 }
 
-YourCustomModel.init(
+Bootcamp.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -15,25 +15,11 @@ YourCustomModel.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
+    description: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    email: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      unique: true,
-      validate: {
-        isEmail: true,
-      },
-    },
-    password: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        len: [8],
-      },
-    },
+  
   },
   {
     hooks: {
@@ -42,8 +28,8 @@ YourCustomModel.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'custom',
+    modelName: 'bootcamp',
   }
 );
 
-module.exports = YourCustomModel;
+module.exports = Bootcamp;
