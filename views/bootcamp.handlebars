@@ -1,18 +1,76 @@
 <!-- Loop over each object in the projects array -->
-{{greeting}}
-{{!-- {{#each as |post| }}
-<div class="row mb-4 project">
-  <div class="col-md-5">
-    <h2>
-      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
-      <a href="/post/{{post.id}}">{{post.name}}</a>
-    </h2>
-    <p>Created by {{post.user.name}} on {{format_date post.date_created}}</p>
+{{!-- {{greeting}} --}}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/stylesheet.css">
+  <link rel="stylesheet" href="/css/jass.css">
+  <title>BINGO!</title>
+</head>
+
+<body>
+  <h1>ZOOM BINGO</h1>
+  <div class="card">
+    <div class="container">
+      <table>
+        <tr class="headers">
+          <th>B</th>
+          <th>I</th>
+          <th>N</th>
+          <th>G</th>
+          <th>O</th>
+        </tr>
+        <tr>
+          <button>
+            <td class="word">"What does clean code mean to you?"</td>
+          </button>
+          <button>
+            <td class="word">"Mark and Marc duo"></td>
+          </button>
+          <button>
+            <td class="word">"“Eli you are on mute”"</td>
+          </button>
+          <button>
+            <td class="word">"Lets get cracking"</td>
+          </button>
+          <button>
+            <td class="word">"“So who wants to share their screen” *cue silence*"</td>
+          </button>
+        </tr>
+        <tr>
+          <td id="" class="word"></td>
+          <td id="" class="word"></td>
+          <td id="" class="word"></td>
+          <td id="" class="word"></td>
+          <td id="" class="word"></td>
+        </tr>
+        <tr>
+          <td id="" class="word"></td>
+          <td id="" class="word"></td>
+          <td id="" class="word"></td>
+          <td id="" class="word"></td>
+          <td id="" class="word"></td>
+        </tr>
+        <tr>
+          <td id="" class="word"></td>
+          <td id="" class="word"></td>
+          <td id="" class="word"></td>
+          <td id="" class="word"></td>
+          <td id="" class="word"></td>
+        </tr>
+        <tr>
+          <td id="" class="word"></td>
+          <td id="" class="word"></td>
+          <td id="" class="word"></td>
+          <td id="" class="word"></td>
+          <td id="" class="word"></td>
+        </tr>
+      </table>
+    </div>
   </div>
-  <div class="col-md-7">
-    <p>
-      {{post.description}}
-    </p>
-  </div>
-</div>
-{{/each}} --}}
+</body>
+{{!-- <script=".. /./" </html> --}}
