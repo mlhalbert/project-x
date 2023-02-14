@@ -1,5 +1,5 @@
-<!-- Loop over each object in the projects array -->
-{{!-- {{greeting}} --}}
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,6 +11,18 @@
   <link rel="stylesheet" href="/css/jass.css">
   <title>BINGO!</title>
 </head>
+
+
+  <!-- For each dish in the array of dish objects, the following <div> will be rendered. -->
+  {{!-- {{#each bingoData as |datum|}}
+    <div>
+    
+      <p>
+          {{datum.event}}
+      </p>
+    </div>
+  {{/each}}
+</div> --}}
 
 <body>
   <h1>ZOOM BINGO</h1>
@@ -24,11 +36,14 @@
           <th>G</th>
           <th>O</th>
         </tr>
+        {{#each bingoData as |datum|}}
         <tr>
           <button>
-            <td class="word">"What does clean code mean to you?"</td>
+            <td class="word">{{datum.event}}</td>
           </button>
-          <button>
+          {{/each}}
+
+          {{!-- <button>
             <td class="word">"Mark and Marc duo"></td>
           </button>
           <button>
@@ -39,7 +54,21 @@
           </button>
           <button>
             <td class="word">"“So who wants to share their screen” *cue silence*"</td>
-          </button>
+          </button> --}}
+        </tr>
+        {{!-- <tr>
+          <td id="" class="word">{{datum.event}}</td>
+          <td id="" class="word"></td>
+          <td id="" class="word"></td>
+          <td id="" class="word"></td>
+          <td id="" class="word"></td>
+        </tr> --}}
+        {{!-- <tr>
+          <td id="" class="word"></td>
+          <td id="" class="word"></td>
+          <td id="" class="word"></td>
+          <td id="" class="word"></td>
+          <td id="" class="word"></td>
         </tr>
         <tr>
           <td id="" class="word"></td>
@@ -54,21 +83,7 @@
           <td id="" class="word"></td>
           <td id="" class="word"></td>
           <td id="" class="word"></td>
-        </tr>
-        <tr>
-          <td id="" class="word"></td>
-          <td id="" class="word"></td>
-          <td id="" class="word"></td>
-          <td id="" class="word"></td>
-          <td id="" class="word"></td>
-        </tr>
-        <tr>
-          <td id="" class="word"></td>
-          <td id="" class="word"></td>
-          <td id="" class="word"></td>
-          <td id="" class="word"></td>
-          <td id="" class="word"></td>
-        </tr>
+        </tr> --}}
       </table>
     </div>
   </div>

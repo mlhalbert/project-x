@@ -3,19 +3,12 @@ const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
 
-// Original model name was "User"
 class Bootcamp extends Model {
 }
 
 Bootcamp.init(
   {
-    id: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      primaryKey: true,
-      autoIncrement: true,
-    },
-    description: {
+    event: {
       type: DataTypes.STRING,
       allowNull: false,
     },
