@@ -42,9 +42,11 @@ This app uses Node.js MySQL so you will need to install all of these.
   - seed database `node seeds/seed.js`
   - start app server `npm start`
 
-\*_Use the command to run the app_
-`node server.js`
+**Heroku Link**
+(https://mighty-refuge-69635.herokuapp.com/)
 
+**Technologies Used**
+- Confetti.js
 
 ![Demo_bingo](./assets/images/demo_bingo.png)
 
