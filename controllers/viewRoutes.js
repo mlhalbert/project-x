@@ -22,13 +22,14 @@ router.get('/', async (req, res) => {
     res.json(err);
   });
   // We use map() to iterate over dishData and then add .get({ plain: true }) each object to serialize it. 
-  const bingoData = bootcampData.map((bing) => bing.get({ plain: true }));
+  const bingoData = bootcampData.map((data) =>data.get({ plain: true }));
+  const shuffledArray = bingoData.sort((a, b) => 0.5 - Math.random());
 
-let bingoData1 = bingoData.splice(0,5);
-let bingoData2 = bingoData.splice(0,5);
-let bingoData3 = bingoData.splice(0,5);
-let bingoData4 = bingoData.splice(0,5);
-let bingoData5 = bingoData.splice(0,5);
+let bingoData1 = shuffledArray.splice(0,5);
+let bingoData2 = shuffledArray.splice(0,5);
+let bingoData3 = shuffledArray.splice(0,5);
+let bingoData4 = shuffledArray.splice(0,5);
+let bingoData5 = shuffledArray.splice(0,5);
 
 
   res.render('bootcamp', { bingoData1, bingoData2, bingoData3, bingoData4, bingoData5 });
