@@ -2,16 +2,21 @@ body {
     background-color: 388087;
 }
 
-div {
-    display: gray;
-    margin: 5px auto;
-    color: blue;
-}
-
 header h1 {
     font-style: bold;
     font-size: 75px;
     text-decoration: underline;
+}
+
+div {
+    /* display: gray; */
+    margin: 5px auto;
+    color: blue;
+}
+
+.column-headers {
+    font-size: 50px;
+    text-align: center;
 }
 
 /* th {
@@ -24,11 +29,14 @@ header h1 {
     border-radius: 10px;
 }
 
+
+
 .container {
     display: grid;
     align-content: center;
-    row-gap: 10px;
+    row-gap: 0;
     column-gap: 10px;
+    /* grid-template-columns: auto auto; */
     /* padding: 2px 15px; */
     /* grid-template-columns: [outer-start] 1fr [inner-start] 1fr [inner-end] 1fr [outer-end]; */
 }
@@ -44,7 +52,8 @@ header h1 {
     color: rgb(129, 76, 76);
     width: 125px;
     height: 125px;
-    font-size: 30px;
+    font-size: 20px;
+    text-align: center;
     border-radius: 4px;
 }
 
